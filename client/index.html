@@ -13,6 +13,23 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
+    
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
+ .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+}
+</style>
+        <meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="https://music.163.com/#/playlist?id=5027185221"></meting-js>
+
+
+    
   </head>
   <body>
     <div id="root"></div>
