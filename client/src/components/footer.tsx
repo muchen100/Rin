@@ -37,7 +37,6 @@ function Footer() {
 
     return (
         <footer>
-            <div class="footer-hitokoto"><a id="hitokotoa" href="#" target="_blank" rel="nofollow noopener noreferrer"><span id="hitokoto"></span></a></div>
             <Helmet>
                 <link rel="alternate" type="application/rss+xml" title={siteName} href="/sub/rss.xml" />
                 <link rel="alternate" type="application/atom+xml" title={siteName} href="/sub/atom.xml" />
