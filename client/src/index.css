@@ -206,16 +206,4 @@ a.toc-link {
 .is-active-link::before {
   @apply bg-theme;
 }
- #canvas-basic {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -999;
-}
-    
 
