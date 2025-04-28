@@ -18,4 +18,80 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+
+
+
+
+  
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/muchen100/lihua/jb.css">
+
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
+
+<style>
+ .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+}
+</style>
+<meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="https://music.163.com/#/playlist?id=5027185221"></meting-js>
+
+<canvas id="canvas-basic"></canvas>
+<script src="https://npm.elemecdn.com/granim@2.0.0/dist/granim.min.js"></script>
+<script>
+var granimInstance = new Granim({
+    element: '#canvas-basic',
+    direction: 'left-right',
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+                ['#a18cd1', '#fbc2eb'],
+                 ['#fff1eb', '#ace0f9'],
+                 ['#d4fc79', '#96e6a1'],
+                 ['#a1c4fd', '#c2e9fb'],
+                 ['#a8edea', '#fed6e3'],
+                 ['#9890e3', '#b1f4cf'],
+                 ['#a1c4fd', '#c2e9fb'],
+                 ['#fff1eb', '#ace0f9']
+
+            ]
+        }
+    }
+});
+</script>
+
+
+
+<script language=javascript>
+    function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        // 这里修改站点开启日期
+        BirthDay=new Date("01/15/2024 00:00:00");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span_dt_dt.innerHTML='<font style=color:#16982b>'+daysold+'</font> 天 <font style=color:#16982b>'+hrsold+'</font> 时 <font style=color:#16982b>'+minsold+'</font> 分 <font style=color:#16982b>'+seconds+'</font> 秒';
+    }
+    show_date_time();
+</script>
+
+
+
+
+  
 </html>
