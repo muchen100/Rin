@@ -12,22 +12,10 @@
       href="https://ik.imagekit.io/chinesefonts3/packages/syst/dist/SourceHanSerifCN/result.css"
     />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-
-
-
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/muchen100/lihua/jb.css">
-
-<!-- require APlayer -->
-<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
-<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
+    
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/muchen100/lihua/jb.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/muchen100/lihua/efg.css">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
 
 <style>
  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
@@ -37,6 +25,18 @@
     left: 0 !important;
 }
 </style>
+
+    
+  </head>
+  
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+<!-- require APlayer -->
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js"></script>
 <meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="https://music.163.com/#/playlist?id=13641360622"></meting-js>
 
 <canvas id="canvas-basic"></canvas>
@@ -63,9 +63,7 @@ var granimInstance = new Granim({
     }
 });
 </script>
-
-
-
+    
 <script language=javascript>
     function show_date_time(){
         window.setTimeout("show_date_time()", 1000);
@@ -88,101 +86,10 @@ var granimInstance = new Granim({
     show_date_time();
 </script>
 
-  <style> 
-    .anime-card { 
-      display: flex; 
-      flex-direction: column; 
-      background: white; 
-      border-radius: 12px; 
-      padding: 16px; 
-      box-shadow: 0 2px 15px rgba(0,0,0,0.05); 
-      font-family: 'Helvetica Neue', Arial, sans-serif; 
-      border: 2px solid #2d8cf0; 
-      position: relative; 
-      overflow: hidden; 
-      width: 100%; 
-      box-sizing: border-box; 
-    } 
-    .anime-card::before { 
-      content: ''; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      width: 6px; 
-      height: 100%; 
-      background: #2d8cf0; 
-    } 
-    .anime-card-img { 
-      width: 100%; 
-      margin-bottom: 12px; 
-    } 
-    /* 设置图片大小统一 */ 
-    .anime-card-img img { 
-      width: 100%; 
-      height: 200px; 
-      object-fit: cover; 
-      border-radius: 8px; 
-      border: 1px solid #eee; 
-    } 
-    .anime-card-content { 
-      width: 100%; 
-    } 
-    .anime-card-title { 
-      margin: 0 0 12px 0; 
-      font-weight: 600; 
-      color: #2d8cf0; 
-      font-size: 18px; 
-    } 
-    .anime-card-desc { 
-      margin: 0 0 16px 0; 
-      color: #444; 
-      line-height: 1.6; 
-      font-size: 15px; 
-      word-break: break-word; 
-    } 
-    .anime-card-footer { 
-      display: flex; 
-      align-items: center; 
-      justify-content: space-between; 
-      margin-top: 12px; 
-    } 
-    .anime-card-episodes { 
-      margin: 0; 
-      color: #666; 
-      font-size: 15px; 
-      white-space: nowrap; 
-    } 
-    .anime-card-button { 
-      white-space: nowrap; 
-      padding: 8px 16px; 
-      background: #2d8cf0; 
-      color: white; 
-      text-decoration: none; 
-      border-radius: 20px; 
-      font-size: 15px; 
-      font-weight: 500; 
-      transition: all 0.2s; 
-    } 
-    .anime-card-button:hover { 
-      background: #1a7be0; 
-      box-shadow: 0 2px 8px rgba(45,140,240,0.3); 
-    } 
- 
-    /* 平板及以上设备恢复横向布局 */ 
-    @media (min-width: 768px) { 
-      .anime-card { 
-        flex-direction: row; 
-        align-items: stretch; 
-      } 
-      .anime-card-img { 
-        width: 200px; 
-        margin-bottom: 0; 
-        margin-right: 16px; 
-      } 
-      .anime-card-img img { 
-        height: 100%; 
-        max-height: none; 
-      } 
-    } 
-  </style> 
+    
+  </body>
+
+
+
+
 </html>
