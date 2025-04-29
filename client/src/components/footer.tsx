@@ -98,6 +98,29 @@ function Footer() {
                 </div>
             </div>
             <LoginModal />
+
+
+
+
+
+<div class="footer-hitokoto"><a id="hitokotoa" href="#" target="_blank" rel="nofollow noopener noreferrer"><span id="hitokoto"></span></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         </footer>
     );
 }
