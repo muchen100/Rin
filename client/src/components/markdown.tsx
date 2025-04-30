@@ -56,7 +56,6 @@ export function Markdown({ content }: { content: string }) {
   }, [content]);
 
 
-
   const Content = useMemo(() => (
     <ReactMarkdown
       className="toc-content dark:text-neutral-300"
