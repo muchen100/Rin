@@ -172,12 +172,30 @@ export function Markdown({ content }: { content: string }) {
         },
         blockquote({ children, ...props }) {
           return (
-            <blockquote
-              className="border-l-4 border-gray-300 dark:border-gray-500 pl-4 italic text-gray-500 dark:text-gray-400"
-              {...props}
-            >
-              {children}
-            </blockquote>
+<blockquote
+  style={{
+    position: 'relative',
+    padding: '12px 15px 12px 28px',
+    margin: '10px 0',
+    color: '#6c6cee',
+    background: 'transparent',
+    lineHeight: 1.5,
+    border: 'none',
+    fontStyle: 'normal'
+  }}
+  {...props}
+>
+  <div style={{
+    position: 'absolute',
+    left: '12px',
+    top: '12px',
+    bottom: '12px',
+    width: '4px',
+    background: 'linear-gradient(to bottom, #726ceb, #fd669a)',
+    borderRadius: '2px'
+  }}/>
+  <strong>{children}</strong>
+</blockquote>
           );
         },
         em({ children, ...props }) {
