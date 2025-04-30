@@ -56,6 +56,7 @@ export function Markdown({ content }: { content: string }) {
   }, [content]);
 
 
+
   const Content = useMemo(() => (
     <ReactMarkdown
       className="toc-content dark:text-neutral-300"
@@ -171,35 +172,12 @@ export function Markdown({ content }: { content: string }) {
         },
         blockquote({ children, ...props }) {
           return (
-<blockquote
-  style={{
-    position: 'relative',
-    padding: '0.8em 1em 0.8em 2em',  // 优化间距
-    margin: '1em 0',
-    color: '#6c6cee',
-    background: 'transparent',
-    lineHeight: 1.6,                // 更合理的行高
-    border: 'none',
-    fontStyle: 'normal'
-  }}
-  {...props}
->
-  <div style={{
-    position: 'absolute',
-    left: '0.5em',
-    top: '0.1em',                  // 微调顶部对齐
-    bottom: '0.1em',               // 微调底部对齐
-    width: '0.3em',
-    background: 'linear-gradient(to bottom, #726ceb, #fd669a)',
-    borderRadius: '0.2em'
-  }}/>
-  <strong style={{
-    display: 'inline-block',
-    verticalAlign: 'middle'        // 确保文字垂直居中
-  }}>
-    {children}
-  </strong>
-</blockquote>
+            <blockquote
+              className="border-l-4 border-gray-300 dark:border-gray-500 pl-4 italic text-gray-500 dark:text-gray-400"
+              {...props}
+            >
+              {children}
+            </blockquote>
           );
         },
         em({ children, ...props }) {
