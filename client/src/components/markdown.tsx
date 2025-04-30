@@ -175,11 +175,11 @@ export function Markdown({ content }: { content: string }) {
 <blockquote
   style={{
     position: 'relative',
-    padding: '12px 15px 12px 28px',
-    margin: '10px 0',
+    padding: '0.8em 1em 0.8em 2em',  // 优化间距
+    margin: '1em 0',
     color: '#6c6cee',
     background: 'transparent',
-    lineHeight: 1.5,
+    lineHeight: 1.6,                // 更合理的行高
     border: 'none',
     fontStyle: 'normal'
   }}
@@ -187,14 +187,19 @@ export function Markdown({ content }: { content: string }) {
 >
   <div style={{
     position: 'absolute',
-    left: '12px',
-    top: '12px',
-    bottom: '12px',
-    width: '4px',
+    left: '0.5em',
+    top: '0.1em',                  // 微调顶部对齐
+    bottom: '0.1em',               // 微调底部对齐
+    width: '0.3em',
     background: 'linear-gradient(to bottom, #726ceb, #fd669a)',
-    borderRadius: '2px'
+    borderRadius: '0.2em'
   }}/>
-  <strong>{children}</strong>
+  <strong style={{
+    display: 'inline-block',
+    verticalAlign: 'middle'        // 确保文字垂直居中
+  }}>
+    {children}
+  </strong>
 </blockquote>
           );
         },
